@@ -1,0 +1,15 @@
+Alimentaire : https://im.qccdn.fr/term/thematique-produit-alimentaire-55/principal-71.jpg
+
+Culturel : https://www.perigny.fr/wp-content/uploads/2018/07/nuage-de-mots-culture.png
+
+Equipement : https://www.startupplace.io/wp-content/uploads/2017/07/Logo-2_300x300_acf_cropped.png
+
+Metier d'art : https://images-na.ssl-images-amazon.com/images/I/61NFORcLGwL._SX258_BO1,204,203,200_.jpg
+
+Service aux entreprises : https://www.i-informatique93.fr/myshop/img/service_1.jpg
+
+Service à la personne : https://static.centreservices.fr/images/articles_cs/si.jpg
+
+Travaux : https://www.vernaison.fr/wp-content/uploads/2018/07/travaux.jpg
+
+Vacant : https://st.depositphotos.com/1334572/4851/v/950/depositphotos_48515287-stock-illustration-vacant.jpg

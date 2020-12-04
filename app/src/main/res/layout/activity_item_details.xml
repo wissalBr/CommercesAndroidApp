@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailsActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/detailsImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/database_background2">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="ID CARTO : "/>
+                <TextView
+                    android:id="@+id/item_id_carto"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/database_background1">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="ADRESSE : "/>
+                <TextView
+                    android:id="@+id/item_adresse"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/database_background2">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="CP : "/>
+                <TextView
+                    android:id="@+id/item_cp"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/database_background1">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Ville : "/>
+                <TextView
+                    android:id="@+id/item_ville"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/database_background2">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Opération : "/>
+                <TextView
+                    android:id="@+id/item_operation"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/database_background1">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Activité précise du locataire : "/>
+                <TextView
+                    android:id="@+id/item_activite"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/database_background2">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Catégorie activité : "/>
+                <TextView
+                    android:id="@+id/item_categorie"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/database_background1">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Enseigne : "/>
+                <TextView
+                    android:id="@+id/item_enseigne"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:weightSum="3"-->
+    <!--        android:padding="5dp">-->
+    <!--        <TextView-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:text="ID CARTO : "/>-->
+    <!--        <TextView-->
+    <!--            android:layout_weight="2"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:text="ID CARTO : "/>-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:weightSum="3"-->
+    <!--        android:padding="5dp">-->
+    <!--        <TextView-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:text="ID CARTO : "/>-->
+    <!--        <TextView-->
+    <!--            android:layout_weight="2"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:text="ID CARTO : "/>-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:weightSum="3"-->
+    <!--        android:padding="5dp">-->
+    <!--        <TextView-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:text="ID CARTO : "/>-->
+    <!--        <TextView-->
+    <!--            android:layout_weight="2"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:text="ID CARTO : "/>-->
+    <!--    </LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relL1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/white_border">
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search"/>
+
+        <EditText
+            android:id="@+id/input_recherche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/search_icon"
+            android:layout_toLeftOf="@+id/cancel_icon"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:background="@null"
+            android:hint="Lancer la recherche"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            android:layout_toEndOf="@+id/search_icon" />
+
+        <ImageView
+            android:id="@+id/cancel_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_remove"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/selected_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:background="@drawable/grey_border">
+
+        <TextView
+            android:id="@+id/selected_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/remove_selected_category"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="@null"
+            android:text="Selected Category"
+            android:inputType="text"/>
+
+        <ImageView
+            android:id="@+id/remove_selected_category"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_remove_light"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:background="#fAfAfA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--recyclerview used-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_property"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
